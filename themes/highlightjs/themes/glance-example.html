@@ -1,0 +1,218 @@
+<html>
+    <head>
+<style>
+body {
+  font-family:sans-serif;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  font-family: 'Fira Code', 'Hack', 'Source Code Pro', monospace;
+  font-size: 12px;
+  line-height:1.6em;
+  background: #2d3142;
+  color: #ffffff
+}
+
+.hljs ::-moz-selection {
+    color: #ffffff;
+    background: #ef8354;
+}
+
+.hljs ::selection {
+  color: #ffffff;
+  background: #ef8354;
+}
+
+.hljs-keyword, .hljs-attr {
+  color: #6e81a0;
+}
+
+.hljs-function .hljs-keyword {
+  color: #ef8354;
+}
+
+.hljs-name {
+  color: #ef8354;
+}
+
+.hljs-function .hljs-title {
+  color: #ffffff;
+}
+
+.hljs-comment {
+  color: #726c87;
+}
+
+.hljs-doctag {
+  color: #9a95aa;
+}
+
+.hljs-string,
+.hljs-symbol {
+  color: #83ba7c;
+}
+
+.hljs-literal,
+.hljs-number {
+  color: #7cb8ba;
+}
+
+/*
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #2d3142;
+  color: #ffffff
+}
+
+.hljs-built_in,
+.hljs-selector-tag,
+.hljs-section,
+.hljs-link {
+  color: #6e81a0;
+}
+
+.hljs-keyword {
+  color: #ef8354;
+}
+
+.hljs,
+.hljs-subst {
+  color: #f8f8f2;
+}
+
+.hljs-title {
+  color: #50fa7b;
+}
+
+.hljs-string,
+.hljs-meta,
+.hljs-name,
+.hljs-type,
+.hljs-attr,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-tag,
+.hljs-template-variable {
+  color: #83ba7c;
+}
+
+.hljs-comment,
+.hljs-quote,
+.hljs-deletion {
+  color: #726c87;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-literal,
+.hljs-number {
+  color: #7cb8ba;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+*/
+
+</style>
+    </head>
+    <body>
+
+<!-- THEME EXAMPLES -->
+<h2>PHP</h2>
+<pre><code>&lt?php
+
+namespace Illuminate\Container;
+
+use Closure;
+use ArrayAccess;
+use LogicException;
+
+class Container implements ArrayAccess, ContainerContract
+{
+    /**
+      * The current globally available container (if any).
+      *
+      * @var static
+      */
+    protected static $instance;
+
+    /**
+      * An array of the types that have been resolved.
+      *
+      * @var array
+      */
+    protected $resolved = [];
+
+    /**
+      * The container's bindings.
+      *
+      * @var array
+      */
+    protected $bindings = [];
+
+    /**
+      *  {@inheritdoc}
+      */
+    public function has($id)
+    {
+        return $this->bound($id, 3);
+    }
+
+    /**
+      * Determine if the given abstract type has been resolved.
+      *
+      * @param  string  $abstract
+      * @return bool
+      */
+    public function resolved($abstract)
+    {
+        if ($this->isAlias($abstract)) {
+            $abstract = $this->getAlias($abstract);
+        }
+
+        return isset($this->resolved[$abstract]) ||
+                isset($this->instances[$abstract]);
+    }
+
+    /**
+      * Determine if a given type is shared.
+      *
+      * @param  string  $abstract
+      * @return bool
+      */
+    public function isShared($abstract)
+    {
+        return isset($this->instances[$abstract]) ||
+              (isset($this->bindings[$abstract]['shared']) &&
+                $this->bindings[$abstract]['shared'] === true);
+    }
+}
+</code></pre>
+        
+<h2>HTML</h2>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Page&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body>
+        &lt;h1 class="primary"&gt;A heading.&lt;/h1&gt;
+        &lt;a href="http://google.com">Google&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>

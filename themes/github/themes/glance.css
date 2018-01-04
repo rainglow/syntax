@@ -1,0 +1,95 @@
+/* Main Window */
+.highlight {
+    background-color:#2d3142 !important;
+    color:#ffffff !important;
+}
+
+/* Line Numbers */
+.blob-num {
+    background-color:#292c3c !important;
+    color:#565e7f;
+}
+
+.blob-num:hover {
+ color:#8b92b0 !important;   
+}
+
+.pl-k, .pl-ent {
+    color:#ef8354 !important;   
+}
+
+.pl-c {
+       color:#726c87 !important;   
+}
+
+.pl-c .pl-k {
+           color:#8c879f !important;  
+}
+
+.pl-c1 {
+           color:#6e81a0 !important;  
+}
+
+.pl-s1, .blob-code {
+    color:#ffffff !important;
+}
+
+.pl-smi {
+    color:#ffffff !important; 
+}
+
+/* third */
+.pl-en, .pl-e {
+    color:#ffffff !important;
+}
+
+/* string */
+.pl-s, .pl-pds {
+       color:#83ba7c !important; 
+}
+
+td.highlighted {
+        background-color:#272a39 !important;
+    color:#ffffff !important;
+}
+
+.blob-code-addition {
+    background-color:#243323;
+}
+
+.blob-code-addition .blob-code-inner {
+    color:#71a061 !important;
+}
+
+.blob-code-deletion .blob-code-inner {
+    color:#a33f3c !important;
+}
+
+.blob-code-deletion {
+    background-color:#381616;
+}
+
+.blob-code-hunk {
+        background-color:#373c51;
+    color:#61698e !important;
+}
+
+.inline-comments {
+    background-color:white;
+    color:#24292e;
+}
+
+.add-line-comment {
+        background-color: #ef8354;
+    background-image: none;
+}
+
+.blob-code-deletion .x {
+    background-color:#562121;
+    color:#ffffff;
+}
+
+.blob-code-addition .x {
+    background-color:#435e41;
+    color:#ffffff;
+}

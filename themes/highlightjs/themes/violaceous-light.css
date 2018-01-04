@@ -1,0 +1,64 @@
+/* HighlightJS https://highlightjs.org/ */
+
+/**
+ * Rainglow '' color theme.
+ *
+ * https://rainglow.io
+ *
+ * @author Dayle Rees
+ */
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    font-family: 'Fira Code', 'Hack', 'Source Code Pro', monospace;
+    font-size: 12px;
+    line-height:1.6em;
+    background: #e5e3ef;
+    color: #444349
+  }
+  
+  .hljs ::-moz-selection {
+      color: #ffffff;
+      background: #725ac1;
+  }
+  
+  .hljs ::selection {
+    color: #ffffff;
+    background: #725ac1;
+  }
+  
+  .hljs-keyword, .hljs-attr {
+    color: #8d86c9;
+  }
+  
+  .hljs-function .hljs-keyword {
+    color: #725ac1;
+  }
+  
+  .hljs-name {
+    color: #725ac1;
+  }
+  
+  .hljs-function .hljs-title {
+    color: #8d8593;
+  }
+  
+  .hljs-comment {
+    color: #594b87;
+  }
+  
+  .hljs-doctag {
+    color: #393056;
+  }
+  
+  .hljs-string,
+  .hljs-symbol {
+    color: #b58ad1;
+  }
+  
+  .hljs-literal,
+  .hljs-number {
+    color: #944fc1;
+  }

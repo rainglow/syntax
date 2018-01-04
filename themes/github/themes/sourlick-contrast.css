@@ -1,0 +1,95 @@
+/* Main Window */
+.highlight {
+    background-color:#060606 !important;
+    color:#dedede !important;
+}
+
+/* Line Numbers */
+.blob-num {
+    background-color:#010101 !important;
+    color:#393939;
+}
+
+.blob-num:hover {
+ color:#6c6c6c !important;   
+}
+
+.pl-k, .pl-ent {
+    color:#edf252 !important;   
+}
+
+.pl-c {
+       color:#615953 !important;   
+}
+
+.pl-c .pl-k {
+           color:#7c726b !important;  
+}
+
+.pl-c1 {
+           color:#8ac27a !important;  
+}
+
+.pl-s1, .blob-code {
+    color:#dedede !important;
+}
+
+.pl-smi {
+    color:#dedede !important; 
+}
+
+/* third */
+.pl-en, .pl-e {
+    color:#bdf522 !important;
+}
+
+/* string */
+.pl-s, .pl-pds {
+       color:#e4ff33 !important; 
+}
+
+td.highlighted {
+        background-color:#000000 !important;
+    color:#dedede !important;
+}
+
+.blob-code-addition {
+    background-color:#243323;
+}
+
+.blob-code-addition .blob-code-inner {
+    color:#71a061 !important;
+}
+
+.blob-code-deletion .blob-code-inner {
+    color:#a33f3c !important;
+}
+
+.blob-code-deletion {
+    background-color:#381616;
+}
+
+.blob-code-hunk {
+        background-color:#131313;
+    color:#464646 !important;
+}
+
+.inline-comments {
+    background-color:white;
+    color:#24292e;
+}
+
+.add-line-comment {
+        background-color: #edf252;
+    background-image: none;
+}
+
+.blob-code-deletion .x {
+    background-color:#562121;
+    color:#ffffff;
+}
+
+.blob-code-addition .x {
+    background-color:#435e41;
+    color:#ffffff;
+}
